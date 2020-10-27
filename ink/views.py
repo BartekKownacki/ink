@@ -2,7 +2,8 @@ from django.shortcuts import render
 import os
 # Create your views here.
 def InkView(request):
-    text = "asdfasdfasdfasdfasdfasdfasdfasdf"
+    f = os.popen('sudo escputil -i -u -r /dev/usb/lp0')
+    text = f.read()
 
     context = {
         'text':text,
