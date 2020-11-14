@@ -1,1 +1,51 @@
-{{ text }}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>InkLevel</h2>
+
+<table>
+  <tr>
+    <th>Color</th>
+    <th>Percent Value</th>
+  </tr>
+  <tr>
+    <td>{{ Black }}</td>
+    <td>{{ BValue }}</td>
+
+  </tr>
+  <tr>
+    <td>{{ Cyan }}</td>
+    <td>{{ CValue }}</td>
+  </tr>
+  <tr>
+    <td>{{ Magenta }}</td>
+    <td>{{ MValue }}</td>
+  </tr>
+  <tr>
+    <td>{{ Yellow }}</td>
+    <td>{{ YValue }}</td>
+  </tr>
+</table>
+
+</body>
+</html>
